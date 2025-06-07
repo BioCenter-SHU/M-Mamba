@@ -1,0 +1,2 @@
+#!/bin/bash
+python -u ../run_longExp.py --random_seed 2024 --is_training 1 --root_path ../data --data_path weather.csv --model_id MM_4_14_weather --model M_Mamba --data custom --features M --seq_len 96 --pred_len 96 --enc_in 21 --n1 512 --n2 32 --dropout 0.7 --revin 1 --ch_ind 1 --residual 1 --dconv 2 --d_state 256 --e_fact 1 --des 'Exp' --train_epochs 100 --itr 1 --batch_size 64 --learning_rate 0.0001
